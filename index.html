@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/386e1df41f.js" crossorigin="anonymous"></script>
+    <title>portfolio web</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div data-aos="fade-up">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+            <div class="header-text">
+                <div data-aos="fade-right">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>kamesh</span></h1>
+            </div>
+            </div>
+        
+        </div>
+    <!--------------about------------------>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div data-aos="flip-left">
+                    <img src="images/pic-1 (2).jpg" alt="">
+                </div>
+                </div>
+                <div class="about-col-2">
+                    <div data-aos="zoom-out">
+                    <h1 class="sub-title">About <span>me</span></h1>
+                    <p>Hi,I'm kamesh one year goes to holds a bachelor of computer application from the university of madras.since 2022,I am worked as a freelancer and i worked freelancer as a web designer and some other works like video editing, photo editing and presentation</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><i class="fa-solid fa-pen fa-shake"></i>  UI/UX</span><br>Designing web/app innterfaces</li>
+                            <li><span><i class="fa-solid fa-code fa-bounce"></i>  programming languages</span><br>HTML-CSS-JAVASCIPT</li>
+                            <li><span><i class="fa-brands fa-app-store-ios fa-beat"></i>  App development</span><br>Buliding  Andriod/ios apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><i class="fa-solid fa-school fa-bounce"></i>  School</span><br>chinmaya vidhyalaya hr sec school@chinmaya nagar</li>
+                            <li><span><i class="fa-solid fa-graduation-cap fa-bounce"></i>  College</span><br>Sri muthukumaran Arts and science college - university of madras
+                               UG Degree-Bachlor of computer application</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><i class="fa-solid fa-object-group fa-beat-fade"></i> web designing</span><br>One year Experience of freelancer</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+    </div>
+    <!------------------------services------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+            <h1 class="sub-title">My services</h1>
+        </div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web Design</h2>
+                    <p>plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. A web designer is responsible for creating the design and layout of a website or web pages.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                    <h2>video edit</h2>
+                    <p>A Video Editor is tasked with taking the raw footage shot by a film crew and director and turning it into the final product. This means following an outline, script or shot list and assembling the footage into one cohesive video or film.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Photo edit</h2>
+                    <p>Photo editors review and select photos for promotion, publication, and dissemination. They identify relevant images, edit photos to make them more appealing, and arrange them in a suitable layout.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-------------portfolio------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Website</h3>
+                        <p>One of Example for web design and this is my digital agency website</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Video edit</h3>
+                        <p>One of Example for Video Edit and many work Experience</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Photo edit</h3>
+                        <p>One of Example for Photo Edit and many work Experience</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!------------------contact section----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>caziekamesh77@gmail.com</p><p><i class="fa-solid fa-phone-volume"></i>9382845538</p>
+                    <div class="social-icons">
+                        <a href=https://instagram.com/micky_mack_26?igshid=MzNlNGNkZWQ4Mg==><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="your name" required>
+                            <input type="email" name="Email" placeholder="your email"required>
+                            <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                            <button type="submit"class="btn btn2">submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+            </div>
+        </div>
+        <div class="copyright"><p>copyright &#169; by kamesh <i class="fa-solid fa-heart"></i></p></div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for( tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+        
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px"
+        }
+    </script>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzR2HY-qcXFfVLk20dfwL63WvUPU-MlVtLhMk3Xxrzup8R0iJQ3yPhyW-Yda-SlgVs3/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML ="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.rest()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        AOS.init();
+      </script>
+    
+</body>
+</html>
